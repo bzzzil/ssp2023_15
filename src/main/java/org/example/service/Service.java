@@ -1,7 +1,6 @@
 package org.example.service;
 
 import org.example.dao.EmployeeDao;
-import org.example.models.Employee;
 
 public class Service {
     EmployeeDao dao;

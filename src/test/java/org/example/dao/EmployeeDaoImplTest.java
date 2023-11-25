@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
-import static org.junit.jupiter.api.Assertions.*;
 
 class EmployeeDaoImplTest {
 
@@ -14,6 +13,6 @@ class EmployeeDaoImplTest {
 
         assertThat(dao.getEmployeeByName("John Dow").getName())
                 .isEqualTo("John Dow");
-        assertThatThrownBy(() -> { dao.getEmployeeByName("Not Exists!"); });
+        assertThatThrownBy(() ->dao.getEmployeeByName("Not Exists!"));
     }
 }
